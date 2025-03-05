@@ -17,7 +17,6 @@ cd high-value-link-scraper
 
 2️⃣ Install Python (if you don't have it)
 Ensure Python 3.9+ is installed.
-
 Check version:
 python3 --version
 For macOS:
@@ -35,9 +34,9 @@ pip install -r requirements.txt
 If requirements.txt is not yet created, run:
 pip install fastapi uvicorn requests beautifulsoup4 sqlalchemy pydantic
 pip freeze > requirements.txt
+
 5️⃣ Run the Scraper (Optional)
 To manually scrape a website and save the high-value links:
-
 python run_scraper.py
 This uses the default URL (https://www.a2gov.org/) inside the script.
 
