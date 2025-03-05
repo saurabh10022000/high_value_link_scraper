@@ -88,53 +88,6 @@ Edit
 GET http://127.0.0.1:8000/links/
 Returns all links stored in the database.
 Sorted by relevance score.
-3. API Docs:
-FastAPI provides automatic documentation:
 
-Swagger UI: http://127.0.0.1:8000/docs
-ReDoc: http://127.0.0.1:8000/redoc
-✅ View the Database
-The scraper uses SQLite.
-You can view the links.db database with:
-
-GUI option:
-Download DB Browser for SQLite.
-Open links.db.
-Terminal option:
-bash
-Copy
-Edit
-sqlite3 links.db
-Then run:
-
-sql
-Copy
-Edit
-SELECT * FROM links;
-✅ Project Structure
-bash
-Copy
-Edit
-high-value-link-scraper/
-│
-├── api.py              # FastAPI server and endpoints
-├── scraper.py          # Core scraper logic
-├── run_scraper.py      # Manual scraper runner
-├── models.py           # SQLAlchemy DB models
-├── database.py         # Database setup
-├── links.db            # SQLite database (auto-generated)
-├── requirements.txt    # Python dependencies
-├── env/                # Virtual environment
-└── README.md           # Project documentation
-📝 How to Deploy
-Push this project to GitHub.
-Share this documentation.
-Anyone can clone, set up, and run on their desktop following these steps.
-🚀 Optional Future Improvements
-Add duplicate link detection.
-Store source website info with each link.
-Upgrade keyword ranking with AI (OpenAI GPT, etc.).
-Switch SQLite to PostgreSQL for large-scale use.
-Add export endpoints (CSV, Excel).
 ✅ Author
 Saurabh Jain
